@@ -1,0 +1,31 @@
+.container{
+  background: url("../../../public/images/monster.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid white;
+
+  ul{
+    font-family: sans-serif;
+    margin-bottom: 1.5rem;
+  }
+
+  li{
+    display: inline;
+    list-style: none;
+
+    a{
+      color: white;
+      margin: 20px;
+      text-decoration: none;
+      padding-bottom: 5px;
+    }
+
+    a:hover{
+      border-bottom: 1px solid white;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.footer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input{
+    padding: 10px 20px;
+    margin: 0 4px 20px 0;
+  }
+
+  textarea{
+    padding: 20px;
+    width: 440px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid black;
+  }
+}

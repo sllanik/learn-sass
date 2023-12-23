@@ -1,0 +1,21 @@
+.gallery{
+  margin-top: 12rem;
+
+  h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 4rem;
+  }
+
+  .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 480px;
+      margin: 0.5rem;
+    }
+  }
+}
