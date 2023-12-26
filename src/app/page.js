@@ -9,6 +9,7 @@ export default function Home() {
         <Link href={"/2.Nesting"}>2.Nesting</Link>
         <Link href={"/3.Imports"}>3.Imports</Link>
         <Link href={"/4.Mixins"}>4.Mixins</Link>
+        <Link href={"/5.Extends"}>5.Extends</Link>
     </div>
   )
 }

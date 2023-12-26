@@ -1,0 +1,97 @@
+@mixin flex-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+@mixin card-image {
+  background: url("../../../public/images/foodOne.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+
+//styling
+
+.header{
+    height: 50vh;
+    @include flex-center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../../../public/images/food.png") no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 4px rgba(255,255,255,1);
+
+    p{
+      margin-top: 20px;
+      max-width: 500px;
+      text-align: center;
+      text-shadow: none;
+    }
+}
+
+.container{
+  height: 100vh;
+
+  .cards{
+    @include flex-center;
+    flex-direction: row;
+
+
+    .card{
+      border: 0.6px solid rgb(168, 168, 168);
+      width: 500px;
+      height: 370px;
+      padding: 20px;
+      margin: 20px;
+      font-family: sans-serif;
+    }
+    .imgOne{
+      @include card-image;
+    }
+
+    .imgTwo{
+      @extend .imgOne;
+      background: url("../../../public/images/foodTwo.png") no-repeat;
+      background-size: cover;
+    }
+
+    .imgThree{
+      @extend .imgOne;
+      background: url("../../../public/images/foofThree.png") no-repeat;
+      background-size: cover;
+    }
+
+    .imgFour{
+      @extend .imgOne;
+      background: url("../../../public/images/foodFour.png") no-repeat;
+      background-size: cover;
+    }
+
+    p{
+      margin-bottom: 2rem;
+      max-width: 300px;
+      line-height: 1.4;
+      color: rgb(96,96,96);
+    }
+
+    .cardTitle{
+      margin-bottom: 20px;
+      color: rgb(28,28,28);
+    }
+
+    .btnPrimary{
+      text-decoration: none;
+      color: #515151;
+      border: 1px solid #515151;
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  }
+
+}
