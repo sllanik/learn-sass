@@ -1,6 +1,135 @@
 .openingMenu{
-  background: #c8dbec;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8)), url("../../public/images/bgsass.png") no-repeat;
+  background-size: cover;;
   height: 100vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Header{
+  margin: 42vh 20vh 10vh 22vh;
+
+  h1{
+    font-size: 26px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  p{
+    color: white;
+    font-size: 12px;
+  }
+}
+
+
+.sass{
+  height: 14rem;
+  background-size: contain;
+  opacity: 0.7;
+ }
+
+
+.cards{
+  height: 38rem;
+  width: 500px;
+  display: flex ;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
+  overflow-y: auto;
+  scrollbar-color: rgba(255,255,255,0.2);
+  scrollbar-width: thin;
+  margin-top: 14vh;
+  margin-left: 22vh;
+}
+
+.card{
+  background: #bfd7e3;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 460px;
+  height: 140px;
+  border-radius: 10px;
+  color: rgba(255,255,255);
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  opacity: 0.6;
+
+
+  h2{
+    font-size: 90px;
+    position: absolute;
+    left: 300px;
+    top: -40px;
+    opacity: 0.3;
+  }
+
+  h3{
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 60px 0 4px 10px;
+  }
+
+  p{
+    font-size: 10px;
+    font-weight: lighter;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+}
+
+.link{
+  text-decoration: none;
+
+  :hover{
+    transition: 0.3s;
+    opacity: 1;
+  }
+
+  :active{
+    transition: 0s;
+    text-shadow: 0 0 10px white;
+  }
+}
+
+.cardOne{
+  background: url("../../public/images/sassnight.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardTwo{
+  background: url("../../public/images/sassplanet.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardThree{
+  background: url("../../public/images/sassport.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardFour{
+  background: url("../../public/images/sassmount.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardFive{
+  background: url("../../public/images/sassfour.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardSix{
+  background: url("../../public/images/sasscave.png") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
