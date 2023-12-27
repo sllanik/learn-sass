@@ -1,0 +1,99 @@
+.selector{
+  /*
+  padding: max(10px, 50px, 20px, 60px, 2px); //60px
+  padding: min(10px, 50px, 20px, 60px, 2px); //2px
+  padding: random();
+  padding: random(10); //random med 1-10
+  padding: unit(20rem); //unit bo rem
+  padding: unitless(20rem); //false
+   */
+}
+
+
+//STRING FUNCTIONS
+.selector{
+  /*
+  font-family: quote(arial);
+  font-family: unquote(arial);
+  font-family: to-upper-case("exordia"); //EXORDIA
+  font-family: str-length("exordia"); //7
+  font-family: str-index("Exordia","r"); //4
+  font-family: str-insert("Exordia","n",4); //Exorndia
+  font-family: unique-id(); //da neko random "ime" kot bcdpijsd
+   */
+}
+
+
+//COLOR FUNCTIONS
+$initial-color: blue;
+
+.container{
+  /*
+  width: 600px;
+  height: 100px;
+   */
+  //background darken($initial-color,40);
+  //background lighten($initial-color,40);
+  //background adjust-hue($initial-color,90);
+  //background saturate($initial-color,50);
+  //background mix($initial-color,green,40);
+}
+
+
+//-----------------------------
+$list:20px 10px 30px ;
+
+.selector{
+  /*
+  padding: length($list); //3
+  padding: nth($list, 2); //10px
+  padding: set-nth($list, 3, 2em); //20px 10px 2em
+  padding: join((10px, 20px, 30px),(40px, 50px, 60px)); //vse vključi
+  padding: append($list, 40px); //20px 10px 30px 40px
+   */
+}
+
+
+/*
+$font-weights:(
+  "regular": 400,
+  "medium":500,
+  "bold":700,
+);
+
+.selector {
+  font-weight: map-get($font-weights, medium); //medium font
+  font-weight: map-keys($font-weights); //"regular", "medium", "bold"
+  font-weight: map-values($font-weights); //400, 500, 700
+  font-weight: map-has-key($font-weights, exor); //false
+}
+ */
+
+
+//CREATING CUSTOM FUNCTIONS
+$one: 100px;
+$two: 100px;
+
+//EXAMPLE 1
+@function add($numberOne, $numberTwo){
+  @return $numberOne + $numberTwo;
+}
+
+.section{
+  width: add(10, 10); //width=20
+}
+
+//EXAMPLE 2
+/*@function randomColor(){
+  @return rgb(random(255), random(255), random(255));
+}
+
+.section{
+  width: 100px;
+  height: 100px;
+  background: randomColor();
+}
+ */
+
+
+//EXAMPLE 3

@@ -1,0 +1,30 @@
+.selector{
+  //EQUALITY OPERATORS
+  /*
+  padding: 10px==10px; //true
+  padding: 10px==10rem; //false
+  padding: 10px==20px; //false
+  font-family: "arial"==arial; //true
+  padding: (6px 8px 10px)==(6px 8px 10px); //true
+   */
+
+  //RELATIONAL OPERATORS
+  /*
+  padding: 10px>30px; //false
+  padding: 10px<30px; //true
+  padding: 10px>=30px; //false
+  padding: 10px<=30px; //true
+   */
+
+  //BOOLEAN OPERATORS
+  padding: arial=="arial" and 10==10px; //false
+  padding: arial=="arial" and 20px==10px; //false
+  padding: arial=="roboto" and 20px==10px; //false
+
+  padding: arial=="arial" or 20px==10px; //true
+  padding: arial=="playfair" or 20px==10px; //false
+
+  padding: not 10px==10px; //false
+  padding: 10px!=10px; //false
+  padding: not 10px!=10px; //true
+}
