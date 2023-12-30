@@ -1,0 +1,71 @@
+.clients{
+  height: 100vh;
+  margin-top: 15rem;
+
+  h1{
+    text-align: center;
+    margin-top: 8rem;
+    color: white;
+    font-size: 4rem;
+    font-family: $main-font;
+    font-weight: normal;
+    transform: translateY(-50px);
+
+    span{
+      background: $label-color;
+    }
+  }
+
+  section.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    .card{
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      color: #ffffff;
+      line-height: 1.5;
+      margin: 10px;
+
+    }
+
+    p{
+      width: 200px;
+      font-family: $primary-font;
+      color: #c5c5c5;
+    }
+
+    .userInfo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .userImg{
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-size: cover;
+        background: url("../../../../public/images/one.png") no-repeat center/cover;
+      }
+
+      .imgTwo{
+        background: url("../../../../public/images/two.png") no-repeat center/cover;
+      }
+
+      .imgThree{
+        background: url("../../../../public/images/three.png") no-repeat center/cover;
+      }
+    }
+  }
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

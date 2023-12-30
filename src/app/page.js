@@ -4,10 +4,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
+      <body className={styles.bodye}>
     <div className={styles.openingMenu}>
         <div className={styles.Header}>
             <img src="images/sass.png" alt="sass" className={styles.sass}/>
-            <h1>Slanik Learning Sass in 7 Projects</h1>
+            <h1>Slanik Learning Sass in 9 Projects</h1>
             <p>XII/2023 -</p>
         </div>
         <div className={styles.cards}>
@@ -53,7 +54,29 @@ export default function Home() {
                     <p>27.12.2023</p>
                 </button>
             </a>
+            <a href={"/9.Directive/2.Loop"} className={styles.link}>
+                <button className={`${styles.card} ${styles.cardSeven}`}>
+                    <h2>07</h2>
+                    <h3>For Loop</h3>
+                    <p>28.12.2023</p>
+                </button>
+            </a>
+            <a href={"/9.Directive/3.EachLoop"} className={styles.link}>
+                <button className={`${styles.card} ${styles.cardEight}`}>
+                    <h2>08</h2>
+                    <h3>Each Loop</h3>
+                    <p>28.12.2023</p>
+                </button>
+            </a>
+            <a href={"/10.PortfolioProject"} className={styles.link}>
+                <button className={`${styles.card} ${styles.cardNine}`}>
+                    <h2>09</h2>
+                    <h3>Portfolio</h3>
+                    <p>29.12.2023</p>
+                </button>
+            </a>
         </div>
     </div>
+  </body>
   )
 }

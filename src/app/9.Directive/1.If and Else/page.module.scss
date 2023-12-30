@@ -1,0 +1,101 @@
+//IF
+
+/*
+$value: 5;
+
+
+p{
+  @if(1+1==2){
+    font-size: 20px; //ker if drži, bo font size 20px
+  }
+
+  @if(10>3){
+    background: pink;
+  }
+
+  @if($value<5){
+    color: blue; //ne bo modr ker zgori ne drži
+  }
+}
+ */
+
+
+/*
+$value: 1;
+
+
+p{
+  @if($value!=1){
+    color: blue;
+  } @else if($value>5 and $value<10){
+    color: teal;  //če if ne velja, gre na naslednjega in uporab to kodo, če je ta pravilna.
+  } @else {
+    color: red; //če ni noben prej pravilen gre na else, ki je "default"
+  }
+}
+ */
+
+/*
+@mixin styles($value){
+  width: $value + px;
+  height: $value + px;
+
+  @if($value>0 and $value<=20){
+    color: orange;
+  }@else if($value>20 and $value<=50){
+    color: teal;
+  }@else {
+    color: purple;
+  }
+}
+
+
+.selector{
+  @include styles(15);  //color bo orange
+  @include styles(25);  //color bo teal
+  @include styles(100);  //color bo purple
+}
+ */
+
+
+//------------FUNCTIONS
+$one: 100px;
+$two:4px;
+
+@function math($operator, $numberOne, $numberTwo){
+  @if($operator=="add"){
+    @return $numberOne+$numberTwo
+  }
+
+  @if($operator=="subtract"){
+    @return $numberOne*$numberTwo
+  }
+
+  @if($operator=="divide"){
+    @return $numberOne/$numberTwo
+  }
+
+  @if($operator=="mod"){
+    @return $numberOne%$numberTwo
+  }
+}
+
+
+section{
+  background: teal;
+  //Add
+  width: math("add",$one,$two); //width je 104px
+  height: math("add",$one,$two); //height je 104px
+
+  //Subtract
+  width: math("subtract",$one,$two); //width je 96px
+  height: math("subtract",$one,$two); //height je 96px
+
+  //Multiplication
+  width: math("multiply",$one,$two); //width je 400px (ena vrednost more bit brez px, torej brez enot)
+  height: math("multiply",$one,$two); //height je 400px -II-
+
+  //Divide
+  width: math("divide",$one,$two); //width je 25px  (ena vrednost more bit brez px, torej brez enot)
+  height: math("divide",$one,$two); //height je 25px
+}

@@ -1,3 +1,7 @@
+.bodye{
+background: #090909;
+}
+
 .openingMenu{
   background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8)), url("../../public/images/bgsass.png") no-repeat;
   background-size: cover;;
@@ -130,6 +134,23 @@
 
 .cardSix{
   background: url("../../public/images/sasscave.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardSeven{
+  background: url("../../public/images/sassarena.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardEight{
+  background: url("../../public/images/sasseight.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cardNine{
+  background: url("../../public/images/sassportfolio.png") no-repeat;
   background-size: cover;
   background-position: center;
 }
